@@ -1,0 +1,7 @@
+<h1>Shopping Cart</h1>
+<div *ngFor="let product of products">
+  <h2>{{ product.name }}</h2>
+  <p>Quantity: {{ product.quantity }}</p>
+  <button (click)="removeFromCart(product.product_id)">Remove from Cart</button>
+</div>
+<button (click)="createOrder()">Create Order</button>
